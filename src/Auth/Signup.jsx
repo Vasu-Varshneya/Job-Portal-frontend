@@ -23,7 +23,7 @@ const Signup = () => {
   e.preventDefault();
   try {
     const { data } = await axios.post(
-      `https://job-portal-backend-42xa.onrender.com//api/v1/user/register`,
+      `https://job-portal-backend-42xa.onrender.com/api/v1/user/register`,
       { name, phone, email, role, password },
       {
         headers: {
