@@ -1,0 +1,99 @@
+.postjob-page {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.postjob-container {
+  background: white;
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.postjob-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.postjob-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.postjob-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 600px) {
+  .postjob-row {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.postjob-input,
+.postjob-select,
+.postjob-textarea {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.postjob-input:focus,
+.postjob-select:focus,
+.postjob-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.postjob-salary-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postjob-ranged-salary {
+  display: flex;
+  gap: 15px;
+}
+
+.postjob-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.postjob-button {
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.postjob-button:hover {
+  background-color: #0056b3;
+}
+
+.postjob-warning {
+  color: #ff4d4d;
+  font-size: 0.95rem;
+  margin: 5px 0 0;
+}
