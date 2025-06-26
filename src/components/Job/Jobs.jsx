@@ -9,7 +9,7 @@ const Jobs = () => {
   useEffect(() => {
     try {
       axios
-        .get(`${process.env.REACT_APP_BACKEND_URL}/api/v1/job/getall`, {
+        .get(`https://job-portal-backend-zeta-five.vercel.app/api/v1/job/getall`, {
           withCredentials: true,
         })
         .then((res) => {

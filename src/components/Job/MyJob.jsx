@@ -18,7 +18,7 @@ const MyJob = () => {
         console.log('req sent')
       try {
         const { data } = await axios.get(
-          `${process.env.REACT_APP_BACKEND_URL}/api/v1/job/getmyjobs`,
+          `https://job-portal-backend-zeta-five.vercel.app/api/v1/job/getmyjobs`,
           { withCredentials: true }
         );
         setMyJobs(data.myJobs);

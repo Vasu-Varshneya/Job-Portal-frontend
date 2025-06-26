@@ -22,7 +22,7 @@ function AppContent() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/v1/user/getuser`, {
+        const response = await axios.get(`https://job-portal-backend-zeta-five.vercel.app/api/v1/user/getuser`, {
           withCredentials: true,
         });
         setUser(response.data.user);
