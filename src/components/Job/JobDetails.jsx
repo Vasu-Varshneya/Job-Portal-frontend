@@ -12,7 +12,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/v1/job/${id}`, {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {
@@ -23,9 +23,12 @@ const JobDetails = () => {
       });
   }, []);
 
+  useEffect(() => {
   if (!isAuthorized) {
     navigateTo("/login");
   }
+}, [isAuthorized]);
+
 
   return (
     <section className="job-details-section">

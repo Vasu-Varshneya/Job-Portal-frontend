@@ -62,7 +62,7 @@ const PostJob = () => {
           };
 
     try {
-      const res = await axios.post("http://localhost:4000/api/v1/job/post", jobData, {
+      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/v1/job/post`, jobData, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
