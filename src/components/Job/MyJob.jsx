@@ -18,7 +18,7 @@ const MyJob = () => {
         console.log('req sent')
       try {
         const { data } = await axios.get(
-          `https://job-portal-backend-42xa.onrender.com//api/v1/job/getmyjobs`,
+          `https://job-portal-backend-42xa.onrender.com/api/v1/job/getmyjobs`,
           { withCredentials: true }
         );
         setMyJobs(data.myJobs);
