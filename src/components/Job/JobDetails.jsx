@@ -13,7 +13,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://job-portal-backend-zeta-five.vercel.app/api/v1/job/${id}`, {
+      .get(`https://job-portal-backend-42xa.onrender.com/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

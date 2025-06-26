@@ -62,7 +62,7 @@ const PostJob = () => {
           };
 
     try {
-      const res = await axios.post(`https://job-portal-backend-zeta-five.vercel.app/api/v1/job/post`, jobData, {
+      const res = await axios.post(`https://job-portal-backend-42xa.onrender.com/api/v1/job/post`, jobData, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
