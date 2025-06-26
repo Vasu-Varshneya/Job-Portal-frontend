@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Context } from "../../main";
-import './JobDetail.css';
+
+import "./Jobdetail.css"
 const JobDetails = () => {
   const { id } = useParams();
   const [job, setJob] = useState({});
