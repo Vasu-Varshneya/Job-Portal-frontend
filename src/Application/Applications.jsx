@@ -26,7 +26,7 @@ const MyApplications = () => {
         : "jobseeker/getall";
 
     axios
-      .get(`http://localhost:4000/api/v1/application/${endpoint}`, {
+      .get(`https://job-portal-backend-42xa.onrender.com/api/v1/application/${endpoint}`, {
         withCredentials: true,
       })
       .then((res) => {
